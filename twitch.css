@@ -1,0 +1,122 @@
+body {
+  background-color: #474747;
+
+}
+
+.topnav {
+  background-color: #460663;
+  overflow: hidden;
+  color: #f3f3f3;
+
+}
+
+h2 {
+  color: #f3f3f3;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.topnav h2 {
+  float: left;
+
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.topnav h2:hover {
+  color: #f79707;
+  text-decoration: none;
+  -webkit-transition: All .2s ease;
+  -moz-transition: All .2s ease;
+  -o-transition: All .2s ease;
+  -webkit-transform: rotate(2deg) scale(1.4);
+  -moz-transform: rotate(2deg) scale(1.4);
+  -o-transform: rotate(2deg) scale(1.4);
+}
+
+.active {
+  background-color: white;
+  color: #460663;
+  text-decoration: none;
+  height: auto;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav h2:not(:first-child) {
+    display: none;
+  }
+  .topnav h2.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .responsive {
+    position: relative;
+  }
+  .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .responsive h2 {
+    background-color: #460663;
+    overflow: hidden;
+    color: #f3f3f3;
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 25px;
+    font-family: 'Bungee Shade', cursive;
+  }
+  .responsive h2:hover {
+    color: #f79707;
+    text-decoration: none;
+    -webkit-transition: All .2s ease;
+    -moz-transition: All .2s ease;
+    -o-transition: All .2s ease;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+  .responsive .active {
+    background-color: white;
+    color: #460663;
+    text-decoration: none;
+  }
+}
+
+.UserList {
+  background-color: #eaeaea;
+  font-size: 27px;
+  padding-left: 30px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.UserList img {
+  margin-top: 5px;
+  height: 68px;
+  width: 68px;
+  border-style: solid;
+  border-width: medium;
+  border-color: purple;
+}
+
+.userName {
+  margin: 6px 0px -5px 0px;
+}
+
+.userInfo {
+font-size: 15px;
+}
+
+.OnLineClass {
+  background-color: rgba(76, 218, 10, 0.54);
+}
