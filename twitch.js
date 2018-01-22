@@ -118,7 +118,6 @@ for ( z=0 ; z<userName.length ; z++ ) {
 }
 }
 
-
 function allUsersTab() {
   $('#allUsers').addClass("active");
   $('#onLine').removeClass("active");

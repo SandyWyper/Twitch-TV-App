@@ -98,31 +98,38 @@ form {
   text-align: center;
   background: #460663;
   border: 0px solid #dbdbdb;
-
 }
 
-.searchBox  {
+.searchBox {
   position: relative;
   border: 0px solid #fafafa;
 }
 
 /*changing placeholder text settings for dif. browsers*/
-::-webkit-input-placeholder { /* For WebKit browsers */
+
+::-webkit-input-placeholder {
+  /* For WebKit browsers */
   color: #460663;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
 }
-:-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+
+:-moz-placeholder {
+  /* For Mozilla Firefox 4 to 18 */
   color: #460663;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
 }
-::-moz-placeholder { /* For Mozilla Firefox 19+ */
+
+::-moz-placeholder {
+  /* For Mozilla Firefox 19+ */
   color: #460663;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
 }
-:-ms-input-placeholder { /* For Internet Explorer 10+ */
+
+:-ms-input-placeholder {
+  /* For Internet Explorer 10+ */
   color: #460663;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
@@ -141,7 +148,6 @@ form {
   background-color: #fafafa;
   color: #460663;
 }
-
 
 .UserList {
   background-color: #eaeaea;
@@ -164,10 +170,9 @@ form {
 }
 
 .userInfo {
-font-size: 15px;
+  font-size: 15px;
 }
 
 .OnLineClass {
-
   background-color: rgba(76, 218, 10, 0.54);
 }
