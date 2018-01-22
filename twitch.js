@@ -20,13 +20,16 @@ $(document).ready(function() {
 //  only when the arrays are filled or all ajax requests have come back, success or fail.
 
 function runPage() {
-fetchUserData();
-getUsersLive();
+
+  $.when(fetch(), getUsersLive()).done(displayUsers, usersOnLine);
+
+
+// fetchUserData();
+// getUsersLive();
 
 //
 // Trying something like....
 // $.when(fetch(),getUsersLive()).done(displaystuff, onLine);
-
 }
 
 
