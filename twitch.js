@@ -159,7 +159,7 @@ if (index >= 0) {
 function takeSearchString(event) {
   event.preventDefault();
   let userSearch = document.getElementById("searchBox").value;
-  return userSearch;
+  return userSearch.toLowerCase();
 }
 
 function findIndex(searchString){
@@ -169,8 +169,6 @@ return userName.indexOf(searchString);
 
 function go() {
 
-console.log(usersOnline);
-console.log(userName.length);
 
 displayUsers();
 
