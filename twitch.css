@@ -1,14 +1,11 @@
 body {
   background-color: #474747;
-
-
 }
 
 .topnav {
   background-color: #460663;
   overflow: hidden;
   color: #f3f3f3;
-
 }
 
 h2 {
@@ -39,7 +36,6 @@ h2 {
   background-color: white;
   color: #460663;
   text-decoration: none;
-
 }
 
 .topnav .icon {
@@ -93,6 +89,60 @@ h2 {
   }
 }
 
+form {
+  width: 500px;
+}
+
+.searchUsers {
+  padding: 4px 0px;
+  text-align: center;
+  background: #460663;
+  border: 0px solid #dbdbdb;
+
+}
+
+.searchBox  {
+  position: relative;
+  border: 0px solid #fafafa;
+}
+
+/*changing placeholder text settings for dif. browsers*/
+::-webkit-input-placeholder { /* For WebKit browsers */
+  color: #460663;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+:-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+  color: #460663;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+::-moz-placeholder { /* For Mozilla Firefox 19+ */
+  color: #460663;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+:-ms-input-placeholder { /* For Internet Explorer 10+ */
+  color: #460663;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.searchButton {
+  position: relative;
+  padding: 4px 15px 6px;
+  left: -8px;
+  border: 2px solid #fafafa;
+  background-color: #460663;
+  color: #fafafa;
+}
+
+.searchButton:hover {
+  background-color: #fafafa;
+  color: #460663;
+}
+
+
 .UserList {
   background-color: #eaeaea;
   font-size: 27px;
@@ -118,5 +168,6 @@ font-size: 15px;
 }
 
 .OnLineClass {
+
   background-color: rgba(76, 218, 10, 0.54);
 }

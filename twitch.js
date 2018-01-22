@@ -11,6 +11,7 @@ $(document).ready(function() {
   $("#allUsers").on("click", allUsersTab);
   $("#onLine").on("click", onLineTab);
   $("#offLine").on("click", offLineTab);
+  $(".searchButton").on("click", searchUserList);
 
   runPage();
 });
@@ -21,11 +22,11 @@ $(document).ready(function() {
 
 function runPage() {
 
-  $.when(fetch(), getUsersLive()).done(displayUsers, usersOnLine);
+  // $.when(fetch(), getUsersLive()).done(displayUsers, usersOnLine);
 
 
-// fetchUserData();
-// getUsersLive();
+fetchUserData();
+getUsersLive();
 
 //
 // Trying something like....
@@ -142,7 +143,29 @@ function offLineTab() {
   $('.OnLineClass').hide();
 }
 
+function searchUserList() {
+  let searchInput = takeSearchString(event);
+  let index = findIndex(searchInput);
 
+if (index >= 0) {
+  $('.OnLineClass').hide();
+  $('.OffLineClass').hide();
+  const userLook = "#" + userName[index];
+  $(userLook).show();
+} else {
+  alert("user not found");
+}
+}
+
+function takeSearchString(event) {
+  event.preventDefault();
+  let userSearch = document.getElementById("searchBox").value;
+  return userSearch;
+}
+
+function findIndex(searchString){
+return userName.indexOf(searchString);
+}
 // initiates second phase
 
 function go() {
